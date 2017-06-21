@@ -1,1 +1,1 @@
-This is naive bayes classfier exercise based on my project exercise-knn
+Copyright MIT
