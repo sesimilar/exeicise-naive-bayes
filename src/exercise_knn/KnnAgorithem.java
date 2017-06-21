@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.PriorityQueue;
 
+/**
+ * @author 吴滔
+ *
+ */
 public class KnnAgorithem {
 	private static final float SURVIVED = (float)1.0;
 	private static final float NOTSURVIVED = (float)-1.0;
@@ -32,7 +36,6 @@ public class KnnAgorithem {
 			for(int i=0;i<this.getKey();i++){
 				minCollection.add(result.poll());
 			}
-		
 		return minCollection;
 	}
 	

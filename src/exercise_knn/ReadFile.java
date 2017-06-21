@@ -5,6 +5,8 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 import java.util.StringTokenizer;
 
@@ -41,6 +43,10 @@ public class ReadFile {
 		int size = data.size();
 		int exerciseSize = size/10*7;
 		int forecastSize = size-exerciseSize;
+		
+		//randomly disorganize list data 
+		Collections.shuffle(data);
+		
 		exerciseDt.addAll(data.subList(0, exerciseSize));
 		forecastDt.addAll(data.subList(exerciseSize, size));
 	}
